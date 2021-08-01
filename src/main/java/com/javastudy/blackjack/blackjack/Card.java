@@ -20,34 +20,6 @@ public class Card {
         this.denomination=denomination;
     }
 
-
-    private int numberToPoint(int number) {
-        if(number >= 11){
-            return 10;
-        }
-
-        return number;
-    }
-
-    private String numberToDenomination(int number) {
-
-        if (number == 1) {
-            return "A";
-        } else if (number == 11) {
-            return "J";
-        } else if (number == 12) {
-            return "Q";
-        } else if (number == 13) {
-            return "K";
-        }
-
-        return String.valueOf(number);
-    }
-
-    public void setDenomination(Denomination denomination) {
-        this.denomination = denomination;
-    }
-
     public Denomination getDenomination() {
         return denomination;
     }
@@ -55,19 +27,9 @@ public class Card {
         return pattern;
     }
 
-    public void setPattern(Pattern pattern) {
-        this.pattern = pattern;
-    }
-
-
     public int getPoint() {
         return point;
     }
-
-    public void setPoint(int point) {
-        this.point = point;
-    }
-
 
     public enum Pattern {
         SPADE("spade"),

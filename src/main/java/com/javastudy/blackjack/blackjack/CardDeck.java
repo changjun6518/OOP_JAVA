@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Stack;
 
 public class CardDeck {
-    private static final int CARD_COUNT = 13;
     private Stack<Card> cards;
 
     public CardDeck() {
